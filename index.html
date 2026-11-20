@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Background Talkers and Voice Agents</title>
+<meta name="description" content="Audio examples and per-SIR results for the paper On the Impact of Background Talkers and Their Removal on Cascaded Voice Agents (EVA workshop, ICASSP 2027).">
+<link rel="stylesheet" href="assets/charts.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="hero">
+  <p class="venue">EVA: Evaluation of Voice Agents · ICASSP 2027 Workshop</p>
+  <h1>On the Impact of Background Talkers and Their Removal on Cascaded Voice Agents</h1>
+  <p class="authors">Mansur Yesilbursa, Nerio Jose Moran Paez, Omar Elejla, Pramod Bachhav, Kamil Wojcicki</p>
+  <p class="affil">Collaboration AI, Cisco Systems, Inc.</p>
+  <div class="links">
+    <span>Paper (coming soon)</span>
+    <span>Code (after acceptance)</span>
+  </div>
+</header>
+
+<main>
+  <div class="intro">
+    <p>Cascaded voice agents pass an ASR transcript to an LLM. Background speech can reach this transcript and change the agent's response. We follow its effect through three stages of the agent: the front-end output, the ASR transcript and the LLM response.</p>
+    <p>This page complements the paper with audio examples and per-SIR results. All examples come from the evaluation sets of the paper.</p>
+  </div>
+
+  <figure class="pipeline">
+    <img src="figs/pipeline.png" alt="Evaluation pipeline: speech sources are mixed into main-only, background-only and overlap conditions, pass through an optional front-end (Hush or BSRNN-based TSE) and an ASR model (Whisper large-v3 or Nemotron streaming), and, for the QA sets, an LLM (Llama 3.1 8B or Gemma 4 31B) answers and a GPT-6 Luna judge scores the response." width="2000" height="365">
+    <figcaption>Evaluation pipeline (Fig. 1 of the paper). TSE-C: causal TSE, TSE-NC: non-causal TSE, both with oracle enrollment.</figcaption>
+  </figure>
+
+  <nav class="toc" aria-label="Sections">
+    <a href="#frontends">1. What the front-ends remove</a>
+    <a href="#transcripts">2. What reaches the transcript</a>
+    <a href="#answers">3. What the agent answers</a>  </nav>
+
+  <!-- ===================== 1 ===================== -->
+  <section class="stage" id="frontends">
+    <h2>1. What the front-ends remove</h2>
+    <p class="stage-lead">Front-end outputs on set S1: main talker at −25 dBFS, reverberant background talker from the DNS 2020 test set. Use headphones for the quiet levels.</p>
+
+    <div class="example" id="a1">
+      <h3>Hush depends on the level, TSE does not</h3>
+      <p class="claim">Hush attenuates a loud background talker by about 14 dB and a quiet one almost completely. In overlap, Hush falls below the unprocessed mixture at high SIR. TSE attenuates the background talker by a roughly constant amount at every level.</p>
+      <p class="how">One clip at five levels. All clips of this example share one gain, so level differences remain audible.</p>
+      <div data-example="A1"></div>
+    </div>
+
+    <div class="example" id="a2">
+      <h3>Hush distorts the user mildly, without a cost in WER</h3>
+      <p class="claim">On main-only speech, Hush has the lowest SI-SDR of all front-ends (17.1 dB on average). Both ASR models still transcribe its output without additional errors.</p>
+      <p class="how">Main talker only, no background talker. This clip has an SI-SDR close to the Hush average.</p>
+      <div data-example="A2"></div>
+    </div>
+  </section>
+
+  <!-- ===================== 2 ===================== -->
+  <section class="stage" id="transcripts">
+    <h2>2. What reaches the transcript</h2>
+    <p class="stage-lead">Background words that the ASR model writes into the transcript of the user's turn.</p>
+
+    <div class="example" id="a3">
+      <h3>Equal attenuation, different intelligibility</h3>
+      <p class="claim">TSE-NC attenuates the background talker more than TSE-C on average but leaks more words. At equal attenuation, the TSE-NC output keeps the background talker more intelligible.</p>
+      <p class="how">Background talker only, at −25 dBFS. Both TSE models attenuate this clip by about 15.5 dB. Every transcribed word comes from the background talker.</p>
+      <div data-example="A3"></div>
+    </div>
+
+    <div class="example" id="a10">
+      <h3>Nemotron transcribes a quiet background talker</h3>
+      <p class="claim">At 24 dB SIR without a front-end, Nemotron inserts 30% background words, compared with 2% for Whisper. The background question then reaches the LLM only through the Nemotron transcript.</p>
+      <p class="how">Setting B (competing question), SIR 24 dB, no front-end. Same mixture, two ASR models.</p>
+      <div data-example="A10"></div>
+    </div>
+  </section>
+
+  <!-- ===================== 3 ===================== -->
+  <section class="stage plots" id="answers">
+    <h2>3. What the agent answers</h2>
+    <p class="stage-lead">SD-QA (USA), 553 spoken questions. Setting A adds unrelated background speech, setting B a competing question. GPT-6 Luna judges each response.</p>
+
+    <div class="example" id="sir">
+      <h3>Accuracy and distraction at every SIR</h3>
+      <p class="how">The paper reports averages over SIR. Select a setting, an ASR model and an LLM. Hover or use the arrow keys for the values.</p>
+      <div id="chart-sir"></div>
+    </div>
+
+    <div class="example" id="a7">
+      <h3>Inserted words rarely change the answer</h3>
+      <p class="claim">Most errors in the raw mixtures are insertions of background words. These insertions rarely prevent a correct answer.</p>
+      <p class="how">Setting A, SIR 12 dB, Whisper, no front-end.</p>
+      <div data-example="A7"></div>
+    </div>
+
+    <div class="example" id="a8">
+      <h3>A front-end can change the question itself</h3>
+      <p class="claim">Front-ends remove most insertions but can introduce substitutions and deletions in the user's question. These errors in the question determine the answer accuracy.</p>
+      <p class="how">Setting A, SIR 0 dB, Whisper. At this SIR, the level-based Hush cannot separate the two talkers.</p>
+      <div data-example="A8"></div>
+    </div>
+
+    <div class="example" id="b6">
+      <h3>Accuracy follows S+D, not WER</h3>
+      <p class="claim">Across all 160 evaluated sets, the accuracy drop relative to clean audio correlates strongly with substitutions and deletions (r = 0.94) and only moderately with the total WER (r = 0.74).</p>
+      <p class="how">Each point is one set: setting × front-end × ASR × LLM × SIR. Hover over a legend entry to highlight one front-end.</p>
+      <div id="chart-acc-errors"></div>
+    </div>
+
+    <div class="example" id="a9">
+      <h3>Correct, but distracted</h3>
+      <p class="claim">With a competing question and no front-end, 25–29% of the responses address the background question. About half of these responses also answer the user correctly, so accuracy alone misses this failure.</p>
+      <p class="how">Setting B, SIR 12 dB, Whisper. The background talker speaks first.</p>
+      <div data-example="A9"></div>
+    </div>
+
+    <div class="example" id="b7">
+      <h3>Distraction follows insertions</h3>
+      <p class="claim">Across the 80 sets of setting B, the distraction rate closely follows the insertion rate (r = 0.98) rather than S+D (r = 0.61).</p>
+      <div id="chart-dist-errors"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <h2>Data</h2>
+  <p>Audio derived from LibriSpeech (CC BY 4.0), the DNS Challenge 2020 test set / PTDB-TUG (ODbL 1.0), and VoiceBench / SD-QA (Apache-2.0), with room impulse responses from OpenSLR 28 (Apache-2.0). All clips are modified: mixed, processed and compressed (AAC).</p>
+</footer>
+
+<script src="assets/charts.js" data-src="data/plots.json"></script>
+<script src="assets/examples.js" data-src="data/examples.json"></script>
+</body>
+</html>

@@ -1,0 +1,570 @@
+{
+ "A1": {
+  "clean": "audio/a1_overlap/clean.m4a",
+  "overlap": [
+   {
+    "sir": 0,
+    "cells": {
+     "none": {
+      "audio": "audio/a1_overlap/ovl_sir00_none.m4a",
+      "sisdr": -0.7
+     },
+     "hush": {
+      "audio": "audio/a1_overlap/ovl_sir00_hush.m4a",
+      "sisdr": 2.8
+     },
+     "tse-c": {
+      "audio": "audio/a1_overlap/ovl_sir00_tse-c.m4a",
+      "sisdr": 10.9
+     },
+     "tse-nc": {
+      "audio": "audio/a1_overlap/ovl_sir00_tse-nc.m4a",
+      "sisdr": 13.5
+     }
+    }
+   },
+   {
+    "sir": 6,
+    "cells": {
+     "none": {
+      "audio": "audio/a1_overlap/ovl_sir06_none.m4a",
+      "sisdr": 5.3
+     },
+     "hush": {
+      "audio": "audio/a1_overlap/ovl_sir06_hush.m4a",
+      "sisdr": 7.8
+     },
+     "tse-c": {
+      "audio": "audio/a1_overlap/ovl_sir06_tse-c.m4a",
+      "sisdr": 14.5
+     },
+     "tse-nc": {
+      "audio": "audio/a1_overlap/ovl_sir06_tse-nc.m4a",
+      "sisdr": 16.6
+     }
+    }
+   },
+   {
+    "sir": 12,
+    "cells": {
+     "none": {
+      "audio": "audio/a1_overlap/ovl_sir12_none.m4a",
+      "sisdr": 11.4
+     },
+     "hush": {
+      "audio": "audio/a1_overlap/ovl_sir12_hush.m4a",
+      "sisdr": 13.1
+     },
+     "tse-c": {
+      "audio": "audio/a1_overlap/ovl_sir12_tse-c.m4a",
+      "sisdr": 18.4
+     },
+     "tse-nc": {
+      "audio": "audio/a1_overlap/ovl_sir12_tse-nc.m4a",
+      "sisdr": 19.9
+     }
+    }
+   },
+   {
+    "sir": 18,
+    "cells": {
+     "none": {
+      "audio": "audio/a1_overlap/ovl_sir18_none.m4a",
+      "sisdr": 17.4
+     },
+     "hush": {
+      "audio": "audio/a1_overlap/ovl_sir18_hush.m4a",
+      "sisdr": 16.1
+     },
+     "tse-c": {
+      "audio": "audio/a1_overlap/ovl_sir18_tse-c.m4a",
+      "sisdr": 21.8
+     },
+     "tse-nc": {
+      "audio": "audio/a1_overlap/ovl_sir18_tse-nc.m4a",
+      "sisdr": 22.8
+     }
+    }
+   },
+   {
+    "sir": 24,
+    "cells": {
+     "none": {
+      "audio": "audio/a1_overlap/ovl_sir24_none.m4a",
+      "sisdr": 23.4
+     },
+     "hush": {
+      "audio": "audio/a1_overlap/ovl_sir24_hush.m4a",
+      "sisdr": 18.5
+     },
+     "tse-c": {
+      "audio": "audio/a1_overlap/ovl_sir24_tse-c.m4a",
+      "sisdr": 25.2
+     },
+     "tse-nc": {
+      "audio": "audio/a1_overlap/ovl_sir24_tse-nc.m4a",
+      "sisdr": 25.7
+     }
+    }
+   }
+  ],
+  "bgonly": [
+   {
+    "dbfs": -25,
+    "cells": {
+     "none": {
+      "audio": "audio/a1_bgonly/bg_25_none.m4a",
+      "att": null
+     },
+     "hush": {
+      "audio": "audio/a1_bgonly/bg_25_hush.m4a",
+      "att": 13.7
+     },
+     "tse-c": {
+      "audio": "audio/a1_bgonly/bg_25_tse-c.m4a",
+      "att": 15.2
+     },
+     "tse-nc": {
+      "audio": "audio/a1_bgonly/bg_25_tse-nc.m4a",
+      "att": 18.6
+     }
+    }
+   },
+   {
+    "dbfs": -31,
+    "cells": {
+     "none": {
+      "audio": "audio/a1_bgonly/bg_31_none.m4a",
+      "att": null
+     },
+     "hush": {
+      "audio": "audio/a1_bgonly/bg_31_hush.m4a",
+      "att": 13.2
+     },
+     "tse-c": {
+      "audio": "audio/a1_bgonly/bg_31_tse-c.m4a",
+      "att": 15.2
+     },
+     "tse-nc": {
+      "audio": "audio/a1_bgonly/bg_31_tse-nc.m4a",
+      "att": 18.6
+     }
+    }
+   },
+   {
+    "dbfs": -37,
+    "cells": {
+     "none": {
+      "audio": "audio/a1_bgonly/bg_37_none.m4a",
+      "att": null
+     },
+     "hush": {
+      "audio": "audio/a1_bgonly/bg_37_hush.m4a",
+      "att": 12.1
+     },
+     "tse-c": {
+      "audio": "audio/a1_bgonly/bg_37_tse-c.m4a",
+      "att": 15.0
+     },
+     "tse-nc": {
+      "audio": "audio/a1_bgonly/bg_37_tse-nc.m4a",
+      "att": 18.3
+     }
+    }
+   },
+   {
+    "dbfs": -43,
+    "cells": {
+     "none": {
+      "audio": "audio/a1_bgonly/bg_43_none.m4a",
+      "att": null
+     },
+     "hush": {
+      "audio": "audio/a1_bgonly/bg_43_hush.m4a",
+      "att": 36.9
+     },
+     "tse-c": {
+      "audio": "audio/a1_bgonly/bg_43_tse-c.m4a",
+      "att": 14.7
+     },
+     "tse-nc": {
+      "audio": "audio/a1_bgonly/bg_43_tse-nc.m4a",
+      "att": 18.5
+     }
+    }
+   },
+   {
+    "dbfs": -49,
+    "cells": {
+     "none": {
+      "audio": "audio/a1_bgonly/bg_49_none.m4a",
+      "att": null
+     },
+     "hush": {
+      "audio": "audio/a1_bgonly/bg_49_hush.m4a",
+      "att": 60.0
+     },
+     "tse-c": {
+      "audio": "audio/a1_bgonly/bg_49_tse-c.m4a",
+      "att": 14.4
+     },
+     "tse-nc": {
+      "audio": "audio/a1_bgonly/bg_49_tse-nc.m4a",
+      "att": 16.9
+     }
+    }
+   }
+  ]
+ },
+ "A2": {
+  "audio": {
+   "input": "audio/a2/input.m4a",
+   "hush": "audio/a2/hush.m4a"
+  },
+  "sisdr_hush": 16.7,
+  "reference": "AT ONE END STOOD A GREAT FIREPLACE IN WHICH A BLUE LOG WAS BLAZING WITH A BLUE FLAME AND OVER THE FIRE HUNG FOUR KETTLES IN A ROW ALL BUBBLING AND STEAMING AT A GREAT RATE",
+  "transcripts": {
+   "whisper": {
+    "none": [
+     {
+      "t": "at one end stood a great fireplace in which a blue log was blazing with a blue flame and over the fire hung four kettles in a row all bubbling and steaming at a great rate",
+      "k": "ok"
+     }
+    ],
+    "hush": [
+     {
+      "t": "at one end stood a great fireplace in which a blue log was blazing with a blue flame and over the fire hung four kettles in a row all bubbling and steaming at a great rate",
+      "k": "ok"
+     }
+    ]
+   },
+   "nemotron": {
+    "none": [
+     {
+      "t": "At one end stood a great fireplace in which a blue log was blazing with a blue flame, and over the fire hung four kettles in a row, all bubbling and steaming at a great rate",
+      "k": "ok"
+     }
+    ],
+    "hush": [
+     {
+      "t": "At one end stood a great fireplace in which a blue log was blazing with a blue flame, and over the fire hung four kettles in a row, all bubbling and steaming at a great rate",
+      "k": "ok"
+     }
+    ]
+   }
+  }
+ },
+ "A3": {
+  "audio": {
+   "none": "audio/a3/none.m4a",
+   "tse-c": "audio/a3/tse-c.m4a",
+   "tse-nc": "audio/a3/tse-nc.m4a"
+  },
+  "att": {
+   "tse-c": 15.5,
+   "tse-nc": 15.6
+  },
+  "transcripts": {
+   "whisper": {
+    "none": "and solitude had lost its momentary charm and become oppressive. The many-bodied girl lay near him. She radiated warmth and good fellowship. We can die, too. We can die like real people.",
+    "tse-c": "We can double up too. We can double up completely.",
+    "tse-nc": "solitude had lost its momentary charm and become oppressive the main-bodied girl lay near him she radiated warmth and good-natured we can die too we can die like a little"
+   },
+   "nemotron": {
+    "none": "Solitude had lost its momentary charm and become oppressive. The many bodied girl lay near him. She radiated warmth and good fellowship. We can die too. We can die like real people",
+    "tse-c": "",
+    "tse-nc": "Solitude had lost its momentary charm and become oppressive. The main bodied girl lay near him. She radiated warmth and good fellowship. We can dye that"
+   }
+  }
+ },
+ "A7": {
+  "mode": "A",
+  "sir": 12,
+  "idx": "sd-qa_usa_0016_sir12",
+  "question": "When was special relativity developed?",
+  "answer": "1905",
+  "start": "far_first",
+  "rows": [
+   {
+    "fe": "none",
+    "asr": "whisper",
+    "audio": "audio/a7/mixture.m4a",
+    "transcript": [
+     {
+      "t": "Don't ask me to carry an oil rag like that.",
+      "k": "ins"
+     },
+     {
+      "t": "When was special relativity developed?",
+      "k": "ok"
+     }
+    ],
+    "llama": {
+     "answer": "I didn't ask you to carry an oil rag, and I'm here to help answer your question.\n\nSpecial relativity was developed by Albert Einstein in 1905. Specifically, he published his theory of special relativity in a paper titled \"On the Electrodynamics of Moving Bodies\" in the journal Annalen der Physik on June 30, 1905. This theory challenged the long-held notion of absolute time and space, and introduced the concept of time dilation and length contraction, which are fundamental principles of modern physics.",
+     "correct": true
+    },
+    "gemma": {
+     "answer": "Special relativity was developed by Albert Einstein in **1905**.\n\nIt was published in his paper titled *\"On the Electrodynamics of Moving Bodies\"* (*Zur Elektrodynamik bewegter Körper*), which appeared in the journal *Annalen der Physik*. This year is often referred to as Einstein's *Annus Mirabilis* (Miracle Year) because he published four groundbreaking papers during this time.",
+     "correct": true
+    }
+   }
+  ]
+ },
+ "A8": {
+  "mode": "A",
+  "sir": 0,
+  "idx": "sd-qa_usa_0073_sir00",
+  "question": "What language do they speak in Buenos Aires?",
+  "answer": "Spanish",
+  "start": "near_first",
+  "rows": [
+   {
+    "fe": "none",
+    "asr": "whisper",
+    "audio": "audio/a8/mixture.m4a",
+    "transcript": [
+     {
+      "t": "What language do they speak in Buenos Aires?",
+      "k": "ok"
+     },
+     {
+      "t": "Confabulation has come to determine structure.",
+      "k": "ins"
+     }
+    ],
+    "llama": {
+     "answer": "I think I see what's going on here! It seems like you're having a bit of fun with words.\n\nIn all seriousness, the official language of Argentina, where Buenos Aires is the capital city, is Spanish. Specifically, the dialect spoken in Buenos Aires is known as Rioplatense Spanish, which is a variant of Spanish that is unique to the Rio de la Plata region, including Argentina and Uruguay.\n\nHowever, I must say that \"confabulation\" is a fascinating word! It refers to the act of creating a false or fanciful narrative, often by combining unrelated ideas or events. It's a bit like a linguistic game of \"connect the dots\" where you make up a story or explanation that isn't necessarily based on facts.\n\nSo, I'm curious, what inspired you to use the word \"confabulation\" in this context? Are you a fan of wordplay or creative writing?",
+     "correct": true
+    },
+    "gemma": {
+     "answer": "The language spoken in Buenos Aires is **Spanish**.\n\nSpecifically, the local dialect is known as **Rioplatense Spanish**. It is distinguished from other Spanish dialects by its unique intonation (which some say sounds similar to Italian) and the use of *\"voseo\"* (using *vos* instead of *tú* for \"you\").\n\nRegarding the second part of your prompt—*\"Confabulation has come to determine structure\"*—this appears to be a philosophical or abstract statement. If you are asking how the act of \"filling in gaps\" or imaginative reconstruction (confabulation) shapes the way we organize information or perceive reality, that is a fascinating topic for discussion. However, in the context of your first question, the factual answer remains Spanish.",
+     "correct": true
+    }
+   },
+   {
+    "fe": "hush",
+    "asr": "whisper",
+    "audio": "audio/a8/hush.m4a",
+    "transcript": [
+     {
+      "t": "What language do they speak in",
+      "k": "ok"
+     },
+     {
+      "t": "Brown Valley?",
+      "k": "sub",
+      "ref": "buenos aires"
+     }
+    ],
+    "llama": {
+     "answer": "I couldn't find any information on a place called \"Brown Valley\". Could you please provide more context or clarify which Brown Valley you are referring to? Is it a real place, a fictional location, or a name of a town or region? This will help me provide a more accurate answer to your question.",
+     "correct": false
+    },
+    "gemma": {
+     "answer": "Because \"Brown Valley\" is a common place name and not a single, globally recognized city or country, the language spoken depends on which specific location you are referring to.\n\nHere are the most likely possibilities:\n\n**1. If you are referring to a town or neighborhood in an English-speaking country (USA, Canada, UK, Australia):**\nThe primary language spoken is **English**.\n\n**2. If you are referring to a fictional place:**\nIf \"Brown Valley\" is from a specific book, movie, or game, the language would depend on the lore of that fictional world.\n\n**3. If you are referring to a specific small community or region:**\nIf this is a small village in a non-English speaking country that happens to be translated as \"Brown Valley,\" the language would be the national language of that country.\n\n**To give you the correct answer, could you please provide more context?** (For example: Which state or country is it in, or is it from a specific story?)",
+     "correct": false
+    }
+   },
+   {
+    "fe": "tse-c",
+    "asr": "whisper",
+    "audio": "audio/a8/tse-c.m4a",
+    "transcript": [
+     {
+      "t": "What language do they speak in Buenos Aires?",
+      "k": "ok"
+     }
+    ],
+    "llama": {
+     "answer": "In Buenos Aires, the official language is Spanish, specifically Argentine Spanish. It's the most widely spoken language in the city and the country of Argentina. However, you may also hear some other languages spoken by the local population, such as Italian, due to the significant Italian immigration to Argentina in the late 19th and early 20th centuries.\n\nIn Buenos Aires, you'll also hear some unique expressions and slang, known as \"lunfardo,\" which is a dialect that originated in the city's working-class neighborhoods. It's a colorful and expressive way of speaking that's worth learning if you're interested in immersing yourself in the local culture.\n\nBut don't worry, most locals in Buenos Aires speak standard Spanish, and you'll have no problem communicating with them if you speak Spanish.",
+     "correct": true
+    },
+    "gemma": {
+     "answer": "The primary language spoken in Buenos Aires is **Spanish**.\n\nHowever, the local dialect is known as **Rioplatense Spanish**, which has some distinct characteristics that set it apart from the Spanish spoken in Spain or other parts of Latin America:\n\n1.  **Voseo:** Instead of using *tú* for \"you,\" people in Buenos Aires use ***vos***. This comes with its own set of verb conjugations.\n2.  **Pronunciation (Yeísmo):** The letters \"ll\" and \"y\" are pronounced with a \"sh\" sound. For example, the word *calle* (street) sounds like \"ca-she.\"\n3.  **Italian Influence:** Due to massive Italian immigration in the late 19th and early 20th centuries, the intonation (the \"melody\" of the speech) sounds very similar to Italian.\n4.  **Lunfardo:** This is a colorful slang that originated in the lower classes and tango lyrics. Many Lunfardo words are derived from Italian and are used frequently in everyday conversation.\n\nWhile Spanish is the official and dominant language, you will also find English spoken in tourist areas and hotels.",
+     "correct": true
+    }
+   },
+   {
+    "fe": "tse-nc",
+    "asr": "whisper",
+    "audio": "audio/a8/tse-nc.m4a",
+    "transcript": [
+     {
+      "t": "What language do they speak in Buenos Aires?",
+      "k": "ok"
+     }
+    ],
+    "llama": {
+     "answer": "In Buenos Aires, the official language is Spanish, specifically Argentine Spanish. It's the same language spoken in most of Latin America, but with some unique characteristics and expressions that are specific to Argentina.\n\nArgentine Spanish has some distinct features, such as:\n\n* A distinct accent and pronunciation, which is often described as a mix of European and indigenous influences\n* Vocabulary that's influenced by Italian, due to the large number of Italian immigrants who arrived in Argentina in the late 19th and early 20th centuries\n* Some unique expressions and idioms that are not commonly used in other Spanish-speaking countries\n\nSo, if you're planning to visit Buenos Aires, you'll be able to communicate with the locals in Spanish, but be prepared to pick up on some of the local nuances and expressions that make Argentine Spanish so unique!",
+     "correct": true
+    },
+    "gemma": {
+     "answer": "The primary language spoken in Buenos Aires is **Spanish**.\n\nHowever, the local dialect is known as **Rioplatense Spanish**, which has some distinct characteristics that set it apart from the Spanish spoken in Spain or other parts of Latin America:\n\n1.  **Voseo:** Instead of using *tú* for \"you,\" people in Buenos Aires use ***vos***. This comes with its own set of verb conjugations.\n2.  **Pronunciation (Yeísmo):** The letters \"ll\" and \"y\" are pronounced with a \"sh\" sound. For example, the word *calle* (street) sounds like \"ca-she.\"\n3.  **Italian Influence:** Due to massive Italian immigration in the late 19th and early 20th centuries, the intonation (the \"melody\" of the speech) sounds very similar to Italian.\n4.  **Lunfardo:** This is a colorful slang that originated in the lower classes and tango lyrics. Many Lunfardo words are derived from Italian and are used frequently in everyday conversation.\n\nWhile Spanish is the official and dominant language, you will also find many people who speak English in tourist areas, and there are smaller communities that speak Italian or Portuguese.",
+     "correct": true
+    }
+   }
+  ]
+ },
+ "A9": {
+  "mode": "B",
+  "sir": 12,
+  "idx": "sd-qa_usa_0389_sir12",
+  "question": "When was the People's Republic of China founded?",
+  "answer": "October 1, 1949",
+  "far_question": "When was Robert Downey Jr. born?",
+  "far_answer": "April 4, 1965",
+  "start": "far_first",
+  "rows": [
+   {
+    "fe": "none",
+    "asr": "whisper",
+    "audio": "audio/a9/mixture.m4a",
+    "transcript": [
+     {
+      "t": "When was Robert Downey Jr. born?",
+      "k": "ins"
+     },
+     {
+      "t": "When was the People's Republic of China founded?",
+      "k": "ok"
+     }
+    ],
+    "llama": {
+     "answer": "Two interesting questions!\n\nRobert Downey Jr. was born on April 4, 1965.\n\nThe People's Republic of China was founded on October 1, 1949.",
+     "correct": true,
+     "distracted": true
+    },
+    "gemma": {
+     "answer": "Robert Downey Jr. was born on April 4, 1965.\nThe People's Republic of China was founded on October 1, 1949.",
+     "correct": true,
+     "distracted": true
+    }
+   },
+   {
+    "fe": "hush",
+    "asr": "whisper",
+    "audio": "audio/a9/hush.m4a",
+    "transcript": [
+     {
+      "t": "When was Robert Downey...",
+      "k": "ins"
+     },
+     {
+      "t": "When was the People's Republic of China founded?",
+      "k": "ok"
+     }
+    ],
+    "llama": {
+     "answer": "The People's Republic of China was founded on October 1, 1949.",
+     "correct": true,
+     "distracted": false
+    },
+    "gemma": {
+     "answer": "The People's Republic of China was founded on **October 1, 1949**.",
+     "correct": true,
+     "distracted": false
+    }
+   },
+   {
+    "fe": "tse-c",
+    "asr": "whisper",
+    "audio": "audio/a9/tse-c.m4a",
+    "transcript": [
+     {
+      "t": "When was the People's Republic of China founded?",
+      "k": "ok"
+     }
+    ],
+    "llama": {
+     "answer": "The People's Republic of China (PRC) was founded on October 1, 1949. This was the date when the Communist Party of China, led by Mao Zedong, declared the establishment of the PRC, marking the end of the Chinese Civil War and the beginning of a new era in Chinese history.",
+     "correct": true,
+     "distracted": false
+    },
+    "gemma": {
+     "answer": "The People's Republic of China was founded on **October 1, 1949**.",
+     "correct": true,
+     "distracted": false
+    }
+   },
+   {
+    "fe": "tse-nc",
+    "asr": "whisper",
+    "audio": "audio/a9/tse-nc.m4a",
+    "transcript": [
+     {
+      "t": "When was the People's Republic of China founded?",
+      "k": "ok"
+     }
+    ],
+    "llama": {
+     "answer": "The People's Republic of China (PRC) was founded on October 1, 1949. This was the day when the Communist Party of China, led by Mao Zedong, declared the establishment of the PRC, marking the end of the Chinese Civil War and the beginning of a new era in Chinese history.",
+     "correct": true,
+     "distracted": false
+    },
+    "gemma": {
+     "answer": "The People's Republic of China was founded on **October 1, 1949**.",
+     "correct": true,
+     "distracted": false
+    }
+   }
+  ]
+ },
+ "A10": {
+  "mode": "B",
+  "sir": 24,
+  "idx": "sd-qa_usa_0291_sir24",
+  "question": "When was the Republican People's Party formed in Turkey?",
+  "answer": "9 September 1923",
+  "far_question": "How many copies of Blood Omen: Legacy of Kain were sold?",
+  "far_answer": "sales figures ranging from 320,082 units to 2 million",
+  "start": "far_first",
+  "rows": [
+   {
+    "fe": "none",
+    "asr": "nemotron",
+    "audio": "audio/a10/mixture.m4a",
+    "transcript": [
+     {
+      "t": "How many copies of Blood Omen?",
+      "k": "ins"
+     },
+     {
+      "t": "When was the Republican People's Party formed in Turkey",
+      "k": "ok"
+     }
+    ],
+    "llama": {
+     "answer": "Two questions!\n\n1. \"Blood Omen\" is a classic action-adventure game developed by Silicon Dreams and published by Psygnosis. It was released in 1997 for the PlayStation. I couldn't find information on the number of copies sold, but it was a well-received game at the time of its release.\n\n2. The Republican People's Party (CHP) was formed in Turkey in 1923. It was founded by Mustafa Kemal Atatürk, the founder of modern Turkey, and was the first political party in the country. The CHP was established on September 9, 1923, and it has been a major player in Turkish politics ever since.",
+     "correct": true,
+     "distracted": true
+    },
+    "gemma": {
+     "answer": "It appears you are asking two unrelated questions. Here are the answers:\n\n**1. How many copies of Blood Omen?**\nThere is no publicly available, official data on the exact number of copies sold for the original *Blood Omen: Legacy of Kain*. Because it was released in 1996 across multiple platforms (PC, PlayStation), specific lifetime sales figures were not widely publicized by Eidos Interactive.\n\n**2. When was the Republican People's Party (CHP) formed in Turkey?**\nThe Republican People's Party (*Cumhuriyet Halk Partisi*) was formed on **September 9, 1923**. It was founded by Mustafa Kemal Atatürk.",
+     "correct": true,
+     "distracted": true
+    }
+   },
+   {
+    "fe": "none",
+    "asr": "whisper",
+    "audio": "audio/a10/mixture.m4a",
+    "transcript": [
+     {
+      "t": "When was the Republican People's Party formed in Turkey?",
+      "k": "ok"
+     }
+    ],
+    "llama": {
+     "answer": "The Republican People's Party (CHP) in Turkey was formed on September 9, 1923.",
+     "correct": true,
+     "distracted": false
+    },
+    "gemma": {
+     "answer": "The Republican People's Party (CHP) was formed on **September 9, 1923**.\n\nIt was founded by Mustafa Kemal Atatürk, the founder of the Republic of Turkey, shortly before the official proclamation of the Republic on October 29, 1923. It is one of the oldest political parties in Asia.",
+     "correct": true,
+     "distracted": false
+    }
+   }
+  ]
+ }
+}

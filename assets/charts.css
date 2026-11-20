@@ -1,0 +1,73 @@
+/* Chart tokens: reference palette (dataviz skill), validated all-pairs for slots 1–3 in both modes. */
+:root {
+  --surface-1: #fcfcfb;
+  --page: #f9f9f7;
+  --text-primary: #0b0b0b;
+  --text-secondary: #52514e;
+  --text-muted: #898781;
+  --grid: #e1e0d9;
+  --axis: #c3c2b7;
+  --border: rgba(11, 11, 11, 0.10);
+  --fe-none: #898781;       /* neutral baseline: no front-end */
+  --fe-hush: #2a78d6;       /* slot 1 */
+  --fe-tsec: #eb6834;       /* slot 2 */
+  --fe-tsenc: #1baf7a;      /* slot 3 */
+  --ref: #52514e;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) {
+    --surface-1: #1a1a19; --page: #0d0d0d; --text-primary: #f0efec; --text-secondary: #c3c2b7;
+    --text-muted: #898781; --grid: #2c2c2a; --axis: #383835; --border: rgba(255, 255, 255, 0.10);
+    --fe-none: #898781; --fe-hush: #3987e5; --fe-tsec: #d95926; --fe-tsenc: #199e70; --ref: #c3c2b7;
+  }
+}
+:root[data-theme="dark"] {
+  --surface-1: #1a1a19; --page: #0d0d0d; --text-primary: #f0efec; --text-secondary: #c3c2b7;
+  --text-muted: #898781; --grid: #2c2c2a; --axis: #383835; --border: rgba(255, 255, 255, 0.10);
+  --fe-none: #898781; --fe-hush: #3987e5; --fe-tsec: #d95926; --fe-tsenc: #199e70; --ref: #c3c2b7;
+}
+
+.viz { font: 13px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--text-primary); }
+.viz-card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+.viz-controls { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 0 0 12px; align-items: center; }
+.viz-seg { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.viz-seg span.lab { align-self: center; padding: 0 8px; color: var(--text-secondary); font-size: 12px; }
+.viz-seg button {
+  font: inherit; font-size: 12.5px; border: 0; background: transparent; color: var(--text-secondary);
+  padding: 5px 10px; cursor: pointer; border-left: 1px solid var(--border);
+}
+.viz-seg button[aria-pressed="true"] { background: var(--text-primary); color: var(--surface-1); }
+.viz-seg button:focus-visible { outline: 2px solid var(--fe-hush); outline-offset: -2px; }
+.viz-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0 0 8px; color: var(--text-secondary); font-size: 12.5px; }
+.viz-legend .item { display: inline-flex; align-items: center; gap: 6px; cursor: default; }
+.viz-legend .item.dim { opacity: 0.35; }
+.viz-legend svg { overflow: visible; }
+.viz-panels { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.viz-panel { position: relative; min-width: 0; }
+.viz-panel h4 { margin: 0 0 2px; font-size: 13px; font-weight: 600; }
+.viz-panel .sub { margin: 0 0 6px; color: var(--text-secondary); font-size: 12px; }
+.viz-panel svg { display: block; width: 100%; height: auto; overflow: visible; touch-action: pan-y; }
+.viz svg text { fill: var(--text-muted); font-size: 11px; font-variant-numeric: tabular-nums; }
+.viz svg text.end-label { fill: var(--text-secondary); font-size: 11.5px; }
+.viz svg text.ref-label { fill: var(--text-secondary); }
+.viz svg text.empty { fill: var(--text-secondary); font-size: 12.5px; }
+.viz .hit:focus { outline: none; }
+.viz .hit:focus-visible { outline: 2px solid var(--fe-hush); }
+.viz-tip {
+  position: absolute; pointer-events: none; z-index: 5; min-width: 150px; max-width: 260px;
+  background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); padding: 8px 10px; font-size: 12px; display: none;
+}
+.viz-tip .hd { color: var(--text-secondary); margin-bottom: 4px; }
+.viz-tip .row { display: flex; align-items: center; gap: 8px; }
+.viz-tip .row b { font-variant-numeric: tabular-nums; min-width: 38px; color: var(--text-primary); }
+.viz-tip .row span { color: var(--text-secondary); }
+.viz-tip .key { width: 12px; height: 2px; border-radius: 1px; flex: none; }
+.viz details { margin-top: 10px; color: var(--text-secondary); }
+.viz details summary { cursor: pointer; font-size: 12.5px; }
+.viz table { border-collapse: collapse; margin-top: 8px; font-size: 12px; font-variant-numeric: tabular-nums; }
+.viz th, .viz td { padding: 3px 10px; text-align: right; border-bottom: 1px solid var(--grid); color: var(--text-primary); }
+.viz th:first-child, .viz td:first-child { text-align: left; }
+.viz th { color: var(--text-secondary); font-weight: 600; }
+.viz .tables { display: flex; flex-wrap: wrap; gap: 8px 32px; overflow-x: auto; }
+.viz .tables h5 { margin: 8px 0 0; font-size: 12px; color: var(--text-secondary); }
